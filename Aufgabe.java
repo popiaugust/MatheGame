@@ -7,15 +7,17 @@ public abstract class Aufgabe
     // Methoden
     public abstract void richtigeLoesungAnzeigen();
 
-    public abstract boolean loesungUeberpruefen();
+    public abstract boolean loesungUeberpruefen(String typ);
 
-    public abstract Pane darstellungErstellen();
-    
+    public abstract Pane darstellungErstellen(Controller c);
+
     public abstract void neu();
+
+    public abstract String getTyp();
 
     public int getPunkte()
     {
         return punkte;
     }
-
 }
+
